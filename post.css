@@ -1,0 +1,130 @@
+* {
+  /* outline: 1px solid #ccc; */
+  box-sizing: border-box;
+}
+
+.post-container {
+  width: 60%;
+  margin: 0px auto 40px auto;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.photo {
+  width: 50%;
+  height: 367.5px;
+  background-color: aqua;
+  background-image: url("atikh-bana-_KaMTEmJnxY-unsplash.jpg");
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.photo:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 367.5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* background-color: burlywood; */
+}
+
+.post-title {
+  font-size: 28px;
+  font-stretch: 100%;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.post-content {
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  color: gray;
+  line-height: 25.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 75px;
+}
+
+.post-separator {
+  height: 1px;
+  margin-top: auto;
+  margin-bottom: 15px;
+  background-color: #ccc;
+}
+
+.post-view {
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+.post-view > a {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  color: gray;
+}
+
+.post-view > a:hover {
+  color: #ccc;
+}
+
+.post-views {
+  font-family: "Quicksand", sans-serif;
+  color: gray;
+}
+
+.post-comment {
+  font-family: "Quicksand", sans-serif;
+  margin-left: 16px;
+}
+
+@media (max-width: 800px) {
+  .post-container {
+    width: 90%;
+    margin: 0px auto 10px auto;
+  }
+
+  .photo {
+    width: 100%;
+    background-position: 50% center;
+  }
+
+  .post {
+    width: 100%;
+  }
+
+  .post-item {
+    flex-direction: column;
+  }
+
+  /* footer */
+  footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px 0px;
+  }
+}
+
+/* footer */
+.footer {
+  height: 100px;
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
